@@ -1,0 +1,41 @@
+{
+    "name": "@kirschbaum-development/tailwindcss-scale-utilities",
+    "version": "1.0.0",
+    "description": "Tailwind CSS plugin to generate scale utilities",
+    "author": {
+        "name": "Kirschbaum Development"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://www.opensource.org/licenses/mit-license.php"
+        }
+    ],
+    "keywords": [
+        "tailwindcss",
+        "scale",
+        "css"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kirschbaum-development/tailwindcss-scale-utilities.git"
+    },
+    "bugs": "https://github.com/kirschbaum-development/tailwindcss-scale-utilities/issues",
+    "homepage": "https://github.com/kirschbaum-development/tailwindcss-scale-utilities",
+    "maintainers": [
+        {
+            "name": "David VanScott",
+            "email": "david@kirschbaumdevelopment.com"
+        }
+    ],
+    "scripts": {
+        "tests": "node_modules/.bin/jest"
+    },
+    "devDependencies": {
+        "jest": "^24.8.0",
+        "jest-matcher-css": "^1.1.0",
+        "lodash": "^4.17.11",
+        "postcss": "^7.0.17",
+        "tailwindcss": "^1.0.5"
+    }
+}
