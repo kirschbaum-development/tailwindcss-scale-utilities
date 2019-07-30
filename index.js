@@ -8,7 +8,7 @@ const prefixNegativeModifiers = function (base, modifier) {
 
 module.exports = function () {
     return ({ addUtilities, e, theme, variants }) => {
-        const scales = theme('scale', {
+        const scale = theme('scale', {
             0: '0',
             25: '.25',
             50: '.5',
@@ -17,7 +17,7 @@ module.exports = function () {
         });
 
         const utilities = fromPairs(
-            map(scales, (value, modifier) => {
+            map(scale, (value, modifier) => {
                 return [
                     `.${e(prefixNegativeModifiers('scale', modifier))}`,
                     {
