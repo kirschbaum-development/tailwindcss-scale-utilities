@@ -1,5 +1,10 @@
 const map = require('lodash/map');
 const fromPairs = require('lodash/fromPairs');
+const startsWith = require('lodash/startsWith');
+
+const prefixNegativeModifiers = function (base, modifier) {
+    return startsWith(modifier, '-') ? `-${base}-${modifier.slice(1)}` : `${base}-${modifier}`;
+};
 
 module.exports = function () {
     return ({ addUtilities, e, theme, variants }) => {
@@ -14,7 +19,7 @@ module.exports = function () {
         const utilities = fromPairs(
             map(scales, (value, modifier) => {
                 return [
-                    `.${e(`scale-${modifier}`)}`,
+                    `.${e(prefixNegativeModifiers('scale', modifier))}`,
                     {
                         transform: `scale(${value})`
                     }

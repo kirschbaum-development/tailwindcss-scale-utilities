@@ -158,6 +158,25 @@ test('scale utilities can be customized', () => {
     });
 });
 
+test('scale utilities can have negative values', () => {
+    return generatePluginCss({
+        theme: {
+            scale: {
+                '-10': '-0.1',
+            }
+        },
+        variants: {
+            scale: []
+        },
+    }).then(css => {
+        expect(css).toMatchCss(`
+      .-scale-10 {
+        transform: scale(-0.1);
+      }
+    `);
+    });
+});
+
 test('scale variants can be customized', () => {
     return generatePluginCss({
         theme: {},
