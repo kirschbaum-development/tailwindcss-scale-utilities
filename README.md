@@ -1,7 +1,5 @@
 # Scale Utilities Plugin for Tailwind CSS
 
-![](https://image.ibb.co/hgnwNx/logo.jpg)
-
 [![npm](https://img.shields.io/npm/v/@kirschbaum-development/tailwindcss-scale-utilities.svg)](https://www.npmjs.com/package/@kirschbaum-development/tailwindcss-scale-utilities)
 [![npm](https://img.shields.io/npm/dt/@kirschbaum-development/tailwindcss-scale-utilities.svg)](https://www.npmjs.com/package/@kirschbaum-development/tailwindcss-scale-utilities)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://www.npmjs.com/package/@kirschbaum-development/tailwindcss-scale-utilities)
@@ -19,24 +17,42 @@ or
 $ npm install @kirschbaum-development/tailwindcss-scale-utilities --save-dev
 ```
 
+## Defaults
+
+```js
+theme: {
+  scale: {
+    0: 0,
+    25: '.25',
+    50: '.5',
+    75: '.75',
+    1: 1
+  }
+},
+
+variants: {
+  scale: ['responsive', 'hover', 'focus']
+}
+```
+
 ## Usage
 
 ```js
 // tailwind.config.js
 {
   theme: {
-    scale: { // defaults to { 0: 0, 25: '.25', 50: '.5', 75: '.75', 100: 1 }
+    scale: {
       '90': '0.9',
       '100': '1',
       '110': '1.1'
     }
   },
-  variants: { // defaults to ['responsive', 'hover', 'focus']
+  variants: {
     scale: ['responsive']
   },
   plugins: [
     require('tailwindcss-scale-utilities')()
-  ],
+  ]
 }
 ```
 
@@ -45,6 +61,11 @@ This plugin generates the following utilities:
 ```css
 /* configurable with the "scale" theme object */
 .scale-[key] {
+  transform: scale([value]);
+}
+
+/* specifying a negative key will follow framework conventions */
+.-scale-[key] {
   transform: scale([value]);
 }
 ```
