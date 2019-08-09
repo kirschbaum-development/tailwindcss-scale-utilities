@@ -1,41 +1,36 @@
 {
-    "name": "@kirschbaum-development/tailwindcss-scale-utilities",
+    "name": "tailwindcss-scale-utilities",
     "version": "1.0.0",
-    "description": "Tailwind CSS plugin to generate scale utilities",
-    "author": {
-        "name": "Kirschbaum Development"
+    "description": "Tailwind CSS plugin for generating scale utilities",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kirschbaum-development/tailwindcss-scale-utilities.git"
     },
-    "licenses": [
-        {
-            "type": "MIT",
-            "url": "http://www.opensource.org/licenses/mit-license.php"
-        }
-    ],
+    "author": {
+        "name": "David VanScott",
+        "email": "david@kirschbaumdevelopment.com"
+    },
+    "license": "MIT",
+    "bugs": "https://github.com/kirschbaum-development/tailwindcss-scale-utilities/issues",
+    "homepage": "https://github.com/kirschbaum-development/tailwindcss-scale-utilities",
     "keywords": [
         "tailwindcss",
         "scale",
         "css"
     ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/kirschbaum-development/tailwindcss-scale-utilities.git"
-    },
-    "bugs": "https://github.com/kirschbaum-development/tailwindcss-scale-utilities/issues",
-    "homepage": "https://github.com/kirschbaum-development/tailwindcss-scale-utilities",
-    "maintainers": [
-        {
-            "name": "David VanScott",
-            "email": "david@kirschbaumdevelopment.com"
-        }
-    ],
     "scripts": {
-        "tests": "node_modules/.bin/jest"
+        "test": "NODE_ENV=test jest"
+    },
+    "dependencies": {
+        "lodash": "^4.17.15",
+        "tailwindcss": "^1.0.0|^1.1.0"
     },
     "devDependencies": {
         "jest": "^24.8.0",
         "jest-matcher-css": "^1.1.0",
-        "lodash": "^4.17.11",
-        "postcss": "^7.0.17",
-        "tailwindcss": "^1.0.5"
+        "postcss": "^7.0.17"
+    },
+    "engines": {
+        "node": ">= 6.11.0"
     }
 }

@@ -1,4 +1,4 @@
-# Scale Utilities Plugin for Tailwind CSS
+# Tailwind CSS Scale Utilities Plugin
 
 [![npm](https://img.shields.io/npm/v/@kirschbaum-development/tailwindcss-scale-utilities.svg)](https://www.npmjs.com/package/@kirschbaum-development/tailwindcss-scale-utilities)
 [![npm](https://img.shields.io/npm/dt/@kirschbaum-development/tailwindcss-scale-utilities.svg)](https://www.npmjs.com/package/@kirschbaum-development/tailwindcss-scale-utilities)
@@ -8,13 +8,13 @@
 ## Installation
 
 ```bash
-$ yarn add @kirschbaum-development/tailwindcss-scale-utilities --dev
+yarn add @kirschbaum-development/tailwindcss-scale-utilities --dev
 ```
 
 or
 
 ```bash
-$ npm install @kirschbaum-development/tailwindcss-scale-utilities --save-dev
+npm install @kirschbaum-development/tailwindcss-scale-utilities --save-dev
 ```
 
 ## Defaults
@@ -61,11 +61,6 @@ This plugin generates the following utilities:
 ```css
 /* configurable with the "scale" theme object */
 .scale-[key] {
-  transform: scale([value]);
-}
-
-/* specifying a negative key will follow framework conventions */
-.-scale-[key] {
   transform: scale([value]);
 }
 ```
