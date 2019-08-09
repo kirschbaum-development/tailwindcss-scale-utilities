@@ -1,5 +1,5 @@
 {
-    "name": "tailwindcss-scale-utilities",
+    "name": "@kirschbaum-development/tailwindcss-scale-utilities",
     "version": "1.0.0",
     "description": "Tailwind CSS plugin for generating scale utilities",
     "repository": {
