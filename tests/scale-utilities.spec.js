@@ -65,21 +65,6 @@ test('default scale utilities and variants are generated', () => {
       .hover\\:scale-100:hover {
         transform: scale(1);
       }
-      .focus\\:scale-0:focus {
-        transform: scale(0);
-      }
-      .focus\\:scale-25:focus {
-        transform: scale(.25);
-      }
-      .focus\\:scale-50:focus {
-        transform: scale(.5);
-      }
-      .focus\\:scale-75:focus {
-        transform: scale(.75);
-      }
-      .focus\\:scale-100:focus {
-        transform: scale(1);
-      }
       @media (min-width: 640px) {
         .sm\\:scale-0 {
           transform: scale(0);
@@ -109,21 +94,6 @@ test('default scale utilities and variants are generated', () => {
           transform: scale(.75);
         }
         .sm\\:hover\\:scale-100:hover {
-          transform: scale(1);
-        }
-        .sm\\:focus\\:scale-0:focus {
-          transform: scale(0);
-        }
-        .sm\\:focus\\:scale-25:focus {
-          transform: scale(.25);
-        }
-        .sm\\:focus\\:scale-50:focus {
-          transform: scale(.5);
-        }
-        .sm\\:focus\\:scale-75:focus {
-          transform: scale(.75);
-        }
-        .sm\\:focus\\:scale-100:focus {
           transform: scale(1);
         }
       }

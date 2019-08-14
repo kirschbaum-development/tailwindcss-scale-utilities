@@ -31,7 +31,7 @@ theme: {
 },
 
 variants: {
-  scale: ['responsive', 'hover', 'focus']
+  scale: ['responsive', 'hover']
 }
 ```
 

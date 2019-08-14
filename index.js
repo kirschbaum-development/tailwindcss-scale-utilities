@@ -24,7 +24,7 @@ module.exports = function () {
 
         addUtilities(
             utilities,
-            variants('scale', ['responsive', 'hover', 'focus'])
+            variants('scale', ['responsive', 'hover'])
         );
     };
 }
