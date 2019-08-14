@@ -22,7 +22,7 @@
         "test": "NODE_ENV=test jest"
     },
     "dependencies": {
-        "lodash": "^4.17.15",
+        "lodash": "^4.17",
         "tailwindcss": "^1.0"
     },
     "devDependencies": {
