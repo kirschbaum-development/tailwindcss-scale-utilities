@@ -3,7 +3,6 @@
 [![npm](https://img.shields.io/npm/v/@kirschbaum-development/tailwindcss-scale-utilities.svg)](https://www.npmjs.com/package/@kirschbaum-development/tailwindcss-scale-utilities)
 [![npm](https://img.shields.io/npm/dt/@kirschbaum-development/tailwindcss-scale-utilities.svg)](https://www.npmjs.com/package/@kirschbaum-development/tailwindcss-scale-utilities)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://www.npmjs.com/package/@kirschbaum-development/tailwindcss-scale-utilities)
-[![tests](https://travis-ci.org/kirschbaum-development/tailwindcss-scale-utilities.svg?branch=master)](https://travis-ci.org/kirschbaum-development/tailwindcss-scale-utilities)
 
 ## Installation
 
