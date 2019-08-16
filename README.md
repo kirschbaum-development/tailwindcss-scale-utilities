@@ -1,8 +1,9 @@
-# Tailwind CSS Scale Utilities Plugin
+![](https://raw.githubusercontent.com/kirschbaum-development/tailwindcss-scale-utilities/dev/banner.png?token=AJHW5NJY5DEXJ3H7YZ4WUOS5MA3VC)
 
 [![npm](https://img.shields.io/npm/v/@kirschbaum-development/tailwindcss-scale-utilities.svg)](https://www.npmjs.com/package/@kirschbaum-development/tailwindcss-scale-utilities)
 [![npm](https://img.shields.io/npm/dt/@kirschbaum-development/tailwindcss-scale-utilities.svg)](https://www.npmjs.com/package/@kirschbaum-development/tailwindcss-scale-utilities)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://www.npmjs.com/package/@kirschbaum-development/tailwindcss-scale-utilities)
+[![tests](https://travis-ci.org/kirschbaum-development/tailwindcss-scale-utilities.svg?branch=master)](https://travis-ci.org/kirschbaum-development/tailwindcss-scale-utilities)
 
 ## Installation
 
@@ -25,12 +26,12 @@ theme: {
     25: '.25',
     50: '.5',
     75: '.75',
-    1: 1
+    100: '1',
+    110: '1.1'
   }
 },
-
 variants: {
-  scale: ['responsive', 'hover']
+  scale: ['hover']
 }
 ```
 
@@ -41,16 +42,17 @@ variants: {
 {
   theme: {
     scale: {
+      '60': '0.6',
       '90': '0.9',
       '100': '1',
-      '110': '1.1'
+      '120': '1.2'
     }
   },
   variants: {
     scale: ['responsive']
   },
   plugins: [
-    require('tailwindcss-scale-utilities')()
+    require('tailwindcss-scale-utilities')
   ]
 }
 ```

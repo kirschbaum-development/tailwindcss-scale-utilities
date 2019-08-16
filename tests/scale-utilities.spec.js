@@ -2,7 +2,6 @@ const merge = require('lodash/merge');
 const cssMatcher = require('jest-matcher-css');
 const postcss = require('postcss');
 const tailwindcss = require('tailwindcss');
-const scalePlugin = require('../index.js');
 
 const generatePluginCss = (config) => {
     return postcss(
@@ -15,17 +14,17 @@ const generatePluginCss = (config) => {
                 },
                 corePlugins: false,
                 plugins: [
-                    scalePlugin(),
+                  require('../index.js'),
                 ],
             }, config)
         )
     )
-        .process('@tailwind utilities', {
-            from: undefined,
-        })
-        .then(result => {
-            return result.css;
-        });
+    .process('@tailwind utilities', {
+        from: undefined,
+    })
+    .then(result => {
+        return result.css;
+    });
 };
 
 expect.extend({
@@ -50,6 +49,9 @@ test('default scale utilities and variants are generated', () => {
       .scale-100 {
         transform: scale(1);
       }
+      .scale-110 {
+        transform: scale(1.1);
+      }
       .hover\\:scale-0:hover {
         transform: scale(0);
       }
@@ -65,37 +67,8 @@ test('default scale utilities and variants are generated', () => {
       .hover\\:scale-100:hover {
         transform: scale(1);
       }
-      @media (min-width: 640px) {
-        .sm\\:scale-0 {
-          transform: scale(0);
-        }
-        .sm\\:scale-25 {
-          transform: scale(.25);
-        }
-        .sm\\:scale-50 {
-          transform: scale(.5);
-        }
-        .sm\\:scale-75 {
-          transform: scale(.75);
-        }
-        .sm\\:scale-100 {
-          transform: scale(1);
-        }
-        .sm\\:hover\\:scale-0:hover {
-          transform: scale(0);
-        }
-        .sm\\:hover\\:scale-25:hover {
-          transform: scale(.25);
-        }
-        .sm\\:hover\\:scale-50:hover {
-          transform: scale(.5);
-        }
-        .sm\\:hover\\:scale-75:hover {
-          transform: scale(.75);
-        }
-        .sm\\:hover\\:scale-100:hover {
-          transform: scale(1);
-        }
+      .hover\\:scale-110:hover {
+        transform: scale(1.1);
       }
     `);
     });
@@ -151,6 +124,9 @@ test('scale variants can be customized', () => {
       .scale-100 {
         transform: scale(1);
       }
+      .scale-110 {
+        transform: scale(1.1);
+      }
       .group:hover .group-hover\\:scale-0 {
         transform: scale(0);
       }
@@ -165,6 +141,9 @@ test('scale variants can be customized', () => {
       }
       .group:hover .group-hover\\:scale-100 {
         transform: scale(1);
+      }
+      .group:hover .group-hover\\:scale-110 {
+        transform: scale(1.1);
       }
     `);
     });
