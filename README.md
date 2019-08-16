@@ -1,5 +1,7 @@
 # Tailwind CSS Scale Utilities Plugin
 
+![](https://raw.githubusercontent.com/kirschbaum-development/tailwindcss-scale-utilities/dev/banner.png?token=AJHW5NJY5DEXJ3H7YZ4WUOS5MA3VC)
+
 [![npm](https://img.shields.io/npm/v/@kirschbaum-development/tailwindcss-scale-utilities.svg)](https://www.npmjs.com/package/@kirschbaum-development/tailwindcss-scale-utilities)
 [![npm](https://img.shields.io/npm/dt/@kirschbaum-development/tailwindcss-scale-utilities.svg)](https://www.npmjs.com/package/@kirschbaum-development/tailwindcss-scale-utilities)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://www.npmjs.com/package/@kirschbaum-development/tailwindcss-scale-utilities)
@@ -29,9 +31,8 @@ theme: {
     110: '1.1'
   }
 },
-
 variants: {
-  scale: ['responsive', 'hover']
+  scale: ['hover']
 }
 ```
 
@@ -52,7 +53,7 @@ variants: {
     scale: ['responsive']
   },
   plugins: [
-    require('tailwindcss-scale-utilities')()
+    require('tailwindcss-scale-utilities')
   ]
 }
 ```
