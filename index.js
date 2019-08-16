@@ -8,7 +8,8 @@ module.exports = function () {
             25: '.25',
             50: '.5',
             75: '.75',
-            100: '1'
+            100: '1',
+            110: '1.1'
         });
 
         const utilities = fromPairs(

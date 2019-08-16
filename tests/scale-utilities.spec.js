@@ -50,6 +50,9 @@ test('default scale utilities and variants are generated', () => {
       .scale-100 {
         transform: scale(1);
       }
+      .scale-110 {
+        transform: scale(1.1);
+      }
       .hover\\:scale-0:hover {
         transform: scale(0);
       }
@@ -64,6 +67,9 @@ test('default scale utilities and variants are generated', () => {
       }
       .hover\\:scale-100:hover {
         transform: scale(1);
+      }
+      .hover\\:scale-110:hover {
+        transform: scale(1.1);
       }
       @media (min-width: 640px) {
         .sm\\:scale-0 {
@@ -81,6 +87,9 @@ test('default scale utilities and variants are generated', () => {
         .sm\\:scale-100 {
           transform: scale(1);
         }
+        .sm\\:scale-110 {
+          transform: scale(1.1);
+        }
         .sm\\:hover\\:scale-0:hover {
           transform: scale(0);
         }
@@ -95,6 +104,9 @@ test('default scale utilities and variants are generated', () => {
         }
         .sm\\:hover\\:scale-100:hover {
           transform: scale(1);
+        }
+        .sm\\:hover\\:scale-110:hover {
+          transform: scale(1.1);
         }
       }
     `);
@@ -151,6 +163,9 @@ test('scale variants can be customized', () => {
       .scale-100 {
         transform: scale(1);
       }
+      .scale-110 {
+        transform: scale(1.1);
+      }
       .group:hover .group-hover\\:scale-0 {
         transform: scale(0);
       }
@@ -165,6 +180,9 @@ test('scale variants can be customized', () => {
       }
       .group:hover .group-hover\\:scale-100 {
         transform: scale(1);
+      }
+      .group:hover .group-hover\\:scale-110 {
+        transform: scale(1.1);
       }
     `);
     });
