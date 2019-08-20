@@ -65,3 +65,27 @@ This plugin generates the following utilities:
   transform: scale([value]);
 }
 ```
+
+## Changelog
+
+Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
+
+## Contributing
+
+Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
+
+### Security
+
+If you discover any security related issues, please email david@kirschbaumdevelopment.com or nathan@kirschbaumdevelopment.com instead of using the issue tracker.
+
+## Credits
+
+- [David VanScott](https://github.com/dvanscott)
+
+## Sponsorship
+
+Development of this package is sponsored by Kirschbaum Development Group, a developer driven company focused on problem solving, team building, and community. Learn more [about us](https://kirschbaumdevelopment.com) or [join us](https://careers.kirschbaumdevelopment.com)!
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
